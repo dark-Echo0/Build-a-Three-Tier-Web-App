@@ -17,11 +17,11 @@
 
 ## Introducing Today's Project!
 
-In this project, I will demonstrate how to build a scalable web application using AWS services such as S3, CloudFront, Lambda, API Gateway, and DynamoDB. I'm doing this project to learn the concept and gain hands-on experience about three-tier architecture comprising the presentation, logic, and data tiers which is fundamental to designing efficient and maintainable software systems.
+In this project, I demonstrated the process building a scalable web application using AWS services such as S3, CloudFront, Lambda, API Gateway, and DynamoDB. I'm doing this project to learn the concept and gain hands-on experience about three-tier architecture comprising the presentation, logic, and data tiers which is fundamental to designing efficient and maintainable software systems.
 
 ### Tools and concepts
 
-Services I used were S3 bucket, Cloudfront, Lambda, API Gateway, and DynamoDB. Key concepts I learned include storing website files in S3 bucket, deliver my content globally using CloudFront, write serverless code with Lambda, create and manage APIs with API Gateway, store and retrieve data with DynamoDB and connect all these services together to build a fully functional three-tier web application.
+Services I used are S3 bucket, Cloudfront, Lambda, API Gateway, and DynamoDB. Key concepts I learned includes storing website files in S3 bucket, deliver my content globally using CloudFront, write serverless code with Lambda, create and manage APIs with API Gateway, store and retrieve data with DynamoDB and connect all these services together to build a fully functional three-tier web application.
 
 ### Project reflection
 
@@ -33,7 +33,7 @@ I did this project to gain a comprehensive understanding of building a three-tie
 
 ## Presentation tier
 
-For the presentation tier, I will set up my website files by storing it in the s3 bucket and setting up my cloudfront for faster content delivery because presentation tier is responsible for displaying the website to the users.
+For the presentation tier, I configured my website files by storing it in the s3 bucket and cloudfront for faster content delivery because presentation tier is responsible for displaying the website to the users.
 
 I accessed my delivered website by adding a policy on my S3 bucket a read access to cloudfront origin access control.
 
@@ -43,7 +43,7 @@ I accessed my delivered website by adding a policy on my S3 bucket a read access
 
 ## Logic tier
 
-For the logic tier, I will set up AWS Lambda functions in combination with API Gateway. These services will serve as the "brain" of the application, handling business logic and facilitating communication between the presentation tier and the data tier. API Gateway will receive user requests, route them to the appropriate Lambda functions, and return the responses, enabling dynamic interactions within the application.
+For the logic tier, I configured AWS Lambda functions in combination with API Gateway. Lambda should serve as the "brain" of the application, handling business logic and facilitating communication between the presentation tier and the data tier. API Gateway should receive user requests, route them to the appropriate Lambda functions, and return the responses, enabling dynamic interactions within the application.
 
 The Lambda function retrieves data by AWS SDK service, which allows it to interact directly with the DynamoDB table. Through this integration, the Lambda function can query the database and return the requested data to the user via API Gateway, enabling real-time, serverless data retrieval.
 
@@ -55,7 +55,7 @@ The Lambda function retrieves data by AWS SDK service, which allows it to intera
 
 ## Data tier
 
-For the data tier, I will set up user data storage using Amazon DynamoDB because it is a fully managed NoSQL database that offers high scalability, low-latency performance, and seamless integration with other AWS services.
+For the data tier, I configured a user data storage using Amazon DynamoDB because it is a fully managed NoSQL database that offers high scalability, low-latency performance, and seamless integration with other AWS services.
 
 The partition key for my DynamoDB table is a required attribute that use to group similar items which means the partition where
  the data will be stored
